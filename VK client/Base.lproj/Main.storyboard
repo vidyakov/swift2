@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VK_client" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="1XQ-fl-4QP">
+                                <rect key="frame" x="188" y="98" width="711" height="1086"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tV-oz-a36">
+                                        <rect key="frame" x="255" y="209" width="54" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSR-F3-6iR">
+                                        <rect key="frame" x="355.5" y="202" width="120" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Udd-XF-YI6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CTL-Eo-4Ar">
+                                        <rect key="frame" x="355.5" y="276" width="120" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="xlj-1z-ym0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VKclient" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dA1-EP-0ur">
+                                        <rect key="frame" x="307" y="120" width="97" height="33"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="27"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMk-19-0Vj">
+                                        <rect key="frame" x="244" y="282.5" width="64" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icd-Y1-Dba">
+                                        <rect key="frame" x="475.5" y="385" width="50" height="47.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="b0T-Iy-8Fg"/>
+                                            <constraint firstAttribute="width" constant="50" id="k6Q-NQ-wLL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" backgroundImage="checkmark.rectangle.fill" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginBtnPresed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7R-3b-kVi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="dA1-EP-0ur" firstAttribute="centerX" secondItem="1XQ-fl-4QP" secondAttribute="centerX" id="0Cw-1Y-USH"/>
+                                    <constraint firstItem="xMk-19-0Vj" firstAttribute="leading" secondItem="dA1-EP-0ur" secondAttribute="leading" constant="-63" id="FbA-wH-4hA"/>
+                                    <constraint firstItem="CTL-Eo-4Ar" firstAttribute="leading" secondItem="dA1-EP-0ur" secondAttribute="centerX" id="HcQ-My-zcs"/>
+                                    <constraint firstItem="uSR-F3-6iR" firstAttribute="leading" secondItem="dA1-EP-0ur" secondAttribute="centerX" id="LiJ-G3-Dqb"/>
+                                    <constraint firstItem="CTL-Eo-4Ar" firstAttribute="centerY" secondItem="xMk-19-0Vj" secondAttribute="centerY" id="N46-O1-uXm"/>
+                                    <constraint firstItem="uSR-F3-6iR" firstAttribute="top" secondItem="dA1-EP-0ur" secondAttribute="bottom" constant="49" id="Rs4-Yh-U9u"/>
+                                    <constraint firstItem="icd-Y1-Dba" firstAttribute="top" secondItem="dA1-EP-0ur" secondAttribute="bottom" constant="230.99999999999994" id="YYP-As-ScJ"/>
+                                    <constraint firstItem="CTL-Eo-4Ar" firstAttribute="top" secondItem="dA1-EP-0ur" secondAttribute="bottom" constant="123" id="cX4-Ei-fK3"/>
+                                    <constraint firstItem="icd-Y1-Dba" firstAttribute="leading" secondItem="CTL-Eo-4Ar" secondAttribute="trailing" id="loQ-32-11q"/>
+                                    <constraint firstItem="1tV-oz-a36" firstAttribute="centerY" secondItem="uSR-F3-6iR" secondAttribute="centerY" id="nZL-JP-9PW"/>
+                                    <constraint firstItem="dA1-EP-0ur" firstAttribute="top" secondItem="Igz-1R-87x" secondAttribute="top" constant="120" id="qUL-Oi-gth"/>
+                                    <constraint firstItem="1tV-oz-a36" firstAttribute="leading" secondItem="dA1-EP-0ur" secondAttribute="leading" constant="-52" id="x57-cU-JMb"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="Igz-1R-87x"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="eGs-BI-Z7E"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="C0w-JS-4V6"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="uSR-F3-6iR" id="r5S-Bf-Xf7"/>
+                        <outlet property="passwordTextField" destination="CTL-Eo-4Ar" id="KmA-bY-tgJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.109375" y="137.48169838945827"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.rectangle.fill" catalog="system" width="64" height="46"/>
+    </resources>
+</document>
